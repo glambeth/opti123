@@ -17,4 +17,4 @@ do
 done" > /home/george/optiminer-zcash/mine.sh
 chmod +x /home/george/optiminer-zcash/mine.sh
 (sudo crontab -l; echo "@reboot /bin/sleep 60 && /home/george/optiminer-zcash/mine.sh" ) | sudo crontab -
-
+sudo reboot
