@@ -1,6 +1,6 @@
 #!/bin/bash
-wget -O /home/george/optiminer-zcash-1.5.0.tar.gz https://github.com/Optiminer/OptiminerZcash/raw/master/optiminer-zcash-1.5.0.tar.gz
-tar -xvf /home/george/optiminer-zcash-1.5.0.tar.gz -C /home/george
+wget -O /home/george/optiminer-zcash-1.5.0.tar.gz https://github.com/Optiminer/OptiminerZcash/blob/master/optiminer-zcash-1.6.0.tar.gz
+tar -xvf /home/george/optiminer-zcash-1.6.0.tar.gz -C /home/george
 echo "#!/bin/bash
 export GPU_FORCE_64BIT_PTR=1
 POOL=zstratum+tls://us1-zcash.flypool.org:3443
