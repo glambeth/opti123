@@ -16,5 +16,7 @@ do
   fi
 done" > /home/george/optiminer-zcash/mine.sh
 chmod +x /home/george/optiminer-zcash/mine.sh
+echo "GPU_FORCE_64BIT_PTR=1" >> /etc/environment
+echo "GPU_MAX_ALLOC_PERCENT=95" >> /etc/environment
 (sudo crontab -l; echo "@reboot /bin/sleep 60 && /home/george/optiminer-zcash/mine.sh" ) | sudo crontab -
 sudo reboot
